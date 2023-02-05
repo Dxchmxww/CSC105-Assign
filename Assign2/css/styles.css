@@ -1,17 +1,37 @@
 
 .ab{
     position: absolute;
+    background-color: rgb(153, 219, 255);
     border-style: outset;
-    border-radius: 25px;
+    border-radius: 25px ;
+    box-sizing: 100px;
     padding: 50px;
     top: 250px;
     right: 200px;
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 220px;
+    margin: 20px;
+
 }
 
-.relative{
+.re{
     position : relative;
+    /* left : 220px;
+    bottom: 100px; */
+    /* margin-bottom: 200px; */
+    float: right;
 
-    color: blue;
+}
+
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+
+img{
+    position: relative;
+    left: 20px;
+    /* float:left; */
 }
