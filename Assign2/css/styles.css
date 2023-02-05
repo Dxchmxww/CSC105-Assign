@@ -1,5 +1,17 @@
+
+.ab{
+    position: absolute;
+    border-style: outset;
+    border-radius: 25px;
+    padding: 50px;
+    top: 250px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+}
+
 .relative{
     position : relative;
-    
+
     color: blue;
 }
