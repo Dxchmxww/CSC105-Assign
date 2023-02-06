@@ -1,26 +1,25 @@
 
-.ab{
-    position: absolute;
+.re{
+    position: relative;
     background-color: rgb(153, 219, 255);
     border-style: outset;
     border-width: 8px;
     border-radius: 30px ;
     box-sizing: 100px;
     padding: 50px;
-    top: 200px;
-    right: 350px;
     width: 500px;
     height: 220px; 
-    
+    margin-top: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
 
 }
 
-.re{
-    position : relative;
-    /* left : 220px;
-    bottom: 100px; */
-    /* margin-bottom: 200px; */
-    float: right;
+.ab{
+    position : absolute;
+    margin-top: 15px;
+    margin-left: 220px;
 
 }
 
@@ -33,6 +32,8 @@ p{
 
 img{
     position: relative;
-    left: 20px;
-    /* float:left; */
+    /* left: 20px; */
+    float:left;
+    border: 2px solid #000000;
+    border-style: outset;
 }
