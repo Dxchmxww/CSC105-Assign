@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./component/Card";
+import List from "./component/List";
+import TypeMe from "./component/TypeMe";
 
 function App() {
+  // const user = {
+  //   name: 'Name: Wannarath T.',
+  //   job: 'Job: Student',
+  //   hobby: 'Hobby: Reading nevel'
+  // };
+
+  const user = [
+    { name: 'Name: Wannarath T.',
+      job: 'Job: Student',
+      hobby: 'Hobby: Reading nevel' 
+    },
+    { name: 'Name: Wannaruay T.',
+      job: 'Job: Student',
+      hobby: 'Hobby: Listen to music' 
+    },
+    { name: 'Name: Wannarun T.',
+      job: 'Job: Student',
+      hobby: 'Hobby: Watch movie' 
+    }
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <List user={user} />
+      <TypeMe />
     </div>
   );
 }
