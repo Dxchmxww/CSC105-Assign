@@ -1,0 +1,10 @@
+.gallery li :hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.gallery li{
+    margin: 20px;
+
+}
+    
