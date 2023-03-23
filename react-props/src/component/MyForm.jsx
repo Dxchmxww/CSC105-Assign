@@ -9,11 +9,6 @@ function MyForm(){
     const[password, setPassword] = useState("");
     const [isFilled, setIsFilled] = useState(false);
 
-    // const handleSubmit = (e) =>{
-    //     // alert ('Please fill out this field')
-    //     e.preventDefault();
-    // }
-
     const handleUsernameChange = (e) => {
         // setUsername(e.target.value.replace(/[^a-zA-Z@]/g , " "));
         setUsername(e.target.value);
