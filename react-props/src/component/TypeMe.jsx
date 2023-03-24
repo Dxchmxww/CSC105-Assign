@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+import "../Style/TypeMe.css"
 
 function TypeMe() {
   const [isFocused, setIsFocused] = useState(false);
@@ -8,7 +9,7 @@ function TypeMe() {
   const handleBlur = () => setIsFocused(false);
 
   return (
-    <div>
+    <div className="type">
       <input type="text" onFocus={handleFocus} onBlur={handleBlur} />
       {!isFocused && <p style={{color: 'red'}}>Please type in here!</p>}
     </div>
