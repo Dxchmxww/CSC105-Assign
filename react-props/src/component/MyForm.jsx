@@ -7,35 +7,34 @@ function MyForm(){
     const[email, setEmail] = useState("");
     const[phone, setPhone] = useState("");
     const[password, setPassword] = useState("");
-    const [isFilled, setIsFilled] = useState(false);
+
 
     const handleUsernameChange = (e) => {
         // setUsername(e.target.value.replace(/[^a-zA-Z@]/g , " "));
         setUsername(e.target.value);
-        setIsFilled(true);
+
 
     }
 
     const handleEmailChange = (e) =>{
         setEmail(e.target.value);
-        setIsFilled(true);
+
     }
 
     const handleLastnameChange = (e) => {
         setLastname(e.target.value);
-        setIsFilled(true);
+
     }
 
     const handlePhoneChange =(e) => {
         const tel = e.target.value.replace(/[^\d]/g, " "); //to remove any non-digit \d=digit
         setPhone(tel.slice(0,10)) //to limit phone number to 10 digits
-        setIsFilled(true);
 
     }
 
     const handlePasswordChange = (e) => {
         setPassword(e.target.value);
-        setIsFilled(true);
+
     }
 
     return(
