@@ -1,5 +1,5 @@
 import {useState} from "react";
-import "../Style/MyForm.css"
+import React from "react";
 
 function MyForm(){
     const[username, setUsername] = useState("");
@@ -7,6 +7,7 @@ function MyForm(){
     const[email, setEmail] = useState("");
     const[phone, setPhone] = useState("");
     const[password, setPassword] = useState("");
+
 
 
     const handleUsernameChange = (e) => {
@@ -37,11 +38,16 @@ function MyForm(){
 
     }
 
+    const handleSubmit = (e) =>{ 
+        e.preventDefault();
+        alert(`Email: ${username} \nName: ${username}\nLastname: ${lastname}\nPhoneNumber: ${phone}\nPassword: ${password}`);
+    }
+
     return(
         <>
             <div className="div">
                 <h2>Register</h2>
-                <form className="form">
+                <form onSubmit={handleSubmit}>
                     <label className="label">
                         Email address:
                         <input 
@@ -52,28 +58,34 @@ function MyForm(){
                             required
                             pattern ="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2, }"/>  
                             {/* {2, } = matches two or more characters  */}
-                        
+                    </label>
                         <br/>
 
+                    <label>
                         Name:
                         <input type="text" value = {username} onChange={handleUsernameChange} placeholder="Enter name" required/>
+                    </label>
                         <br/>
 
+                    <label>
                         Lastname:
                         <input type="text" value = {lastname} onChange={handleLastnameChange} placeholder="Enter lastname" required/>
+                    </label>
                         <br/>
 
+                    <label>
                         Phone Number:
-                        <input value = {phone} onChange={handlePhoneChange} pattern="[0-9]{10}" placeholder="Enter phone number" required/>
+                        <input type="tel" value = {phone} onChange={handlePhoneChange} pattern="[0-9]{10}" placeholder="Enter phone number" required/>
+                    </label>    
                         <br/>
 
+                    <label>
                         Password:
                         <input type="text" value={password} onChange={handlePasswordChange} placeholder="Password" required/>
-                        <br/>
                         
                     </label>
 
-                    {/* <input type="submit" value="Submit"/> */}
+                    <br/>
 
                     <button type="submit">Submit</button>
 

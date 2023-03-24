@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
-import "../Style/TypeMe.css"
+
 
 function TypeMe() {
   const [isFocused, setIsFocused] = useState(false);
