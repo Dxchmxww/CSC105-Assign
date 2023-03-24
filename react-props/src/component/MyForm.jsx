@@ -67,7 +67,7 @@ function MyForm(){
                         <input value = {phone} onChange={handlePhoneChange} pattern="[0-9]{10}" placeholder="Enter phone number" required/>
                         <br/>
 
-                        Passsword:
+                        Password:
                         <input type="text" value={password} onChange={handlePasswordChange} placeholder="Password" required/>
                         <br/>
                         
