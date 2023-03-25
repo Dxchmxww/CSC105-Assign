@@ -27,8 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <List user={user} />
-      <TypeMe />
+      {/* <List user={user} />
+      <TypeMe /> */}
       <MyForm />
     </div>
   );
